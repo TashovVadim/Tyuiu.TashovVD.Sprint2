@@ -6,34 +6,38 @@ namespace Tyuiu.TashovVD.Sprint2.Task2.V10.Lib
     {
         public bool CheckDotInShadedArea(int x, int y)
         {
-            if ((x >= 3 && x < 6) && (x > 8 && x < 13))
+            if ((x >= 3 && x < 6) || (x > 8 && x < 13))
             {
                 if (x == 4 && (y >= 3 && y <= 14))
                 {
                     return true;
                 }
-                else if (((x >= 3 && x <= 5) || (x > 7 && x < 10)) && (y == 11))
+                else if (y >= 3 && y <= 7)
                 {
                     return true;
                 }
-                if (y >= 3 && y <= 7)
+                else if (x == 9 && y >= 8 && y <= 12)
                 {
                     return true;
                 }
-                if (x == 9 && y >= 8 && y <= 12)
+                else
                 {
-                    return true;
+                    return false;
                 }
             }
-            if (x > 5 && x < 9)
+           if (x > 5 && x < 9)
             {
                 if (y >= 5 && y <= 9)
                 {
                     return true;
                 }
-                if (x == 8 && y > 9 && y < 13)
+                else if (x == 8 && y > 9 && y < 13)
                 {
                     return true;
+                }
+                else
+                {
+                    return false;
                 }
             }
             
@@ -46,6 +50,10 @@ namespace Tyuiu.TashovVD.Sprint2.Task2.V10.Lib
                 return true;
             }
             if (y == 14 && x >= 2 && x <= 6)
+            {
+                return true;
+            }
+            if (y == 11 && ((x >= 3 && x <= 5) || (x >= 8 && x <= 9)))
             {
                 return true;
             }
