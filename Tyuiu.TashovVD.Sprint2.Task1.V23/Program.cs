@@ -22,6 +22,7 @@ namespace Tyuiu.TashovVD.Sprint2.Task1.V23
             Console.WriteLine("* арифметических выражений, которая вернет логическую                     *");
             Console.WriteLine("* последовательность(массив): (False, False, False, True, True, True),    *");
             Console.WriteLine("* при a = 242, b = 571, c = 325, d = 155                                  *");
+            Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
