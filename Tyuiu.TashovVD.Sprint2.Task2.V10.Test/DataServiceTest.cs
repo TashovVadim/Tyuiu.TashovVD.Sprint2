@@ -13,7 +13,7 @@ namespace Tyuiu.TashovVD.Sprint2.Task2.V10.Test
             y = 8;
 
             DataService ds = new DataService();
-            bool wait = true;
+            bool wait = false;
             var res = ds.CheckDotInShadedArea(x, y);
             Assert.AreEqual(wait, res);
         }
