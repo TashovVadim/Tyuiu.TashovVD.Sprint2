@@ -31,7 +31,7 @@ namespace Tyuiu.TashovVD.Sprint2.Task5.V13.Lib
 
             if (n < mx)
             {
-                return $"{n + 1}.{m}.{g}";
+                return $"{n + 1:D2}.{m:D2}.{g}";
 
             }
             else if ((m == 12) && (n == mx))
@@ -40,7 +40,7 @@ namespace Tyuiu.TashovVD.Sprint2.Task5.V13.Lib
             }
             else if ((m < 12) && (n == mx))
             {
-                return $"1.{m+1}.{g}";
+                return $"1.{m+1:D2}.{g}";
             }
             else
             {
