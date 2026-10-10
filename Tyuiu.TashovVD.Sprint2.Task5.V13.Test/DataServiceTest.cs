@@ -10,7 +10,7 @@ namespace Tyuiu.TashovVD.Sprint2.Task5.V13.Test
         {
             int g, m, n;
             g = 2003; m = 12; n = 5;
-            string wait = "2003/12/6";
+            string wait = "6.12.2003";
             DataService ds = new DataService();
             var res = ds.FindDateOfNextDay(g, m, n);
             Assert.AreEqual(wait, res);

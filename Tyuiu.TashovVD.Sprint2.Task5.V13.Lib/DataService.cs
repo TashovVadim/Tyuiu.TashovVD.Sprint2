@@ -31,16 +31,20 @@ namespace Tyuiu.TashovVD.Sprint2.Task5.V13.Lib
 
             if (n < mx)
             {
-                return $"{g}/{m}/{n + 1}";
+                return $"{n + 1}.{m}.{g}";
 
             }
-            else if (n > mx) 
+            else if ((m == 12) && (n == mx))
             {
-                throw new ArgumentException("Неверное значение дня!");
+                return $"1.1.{g+1}";
+            }
+            else if ((m < 12) && (n == mx))
+            {
+                return $"1.{m+1}.{g}";
             }
             else
             {
-                return $"{g+1}/1/1";
+                throw new ArgumentException("Неверное значение даты!");
             }
 
 
